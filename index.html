@@ -2,44 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Donate to Shakila Khatoon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donation Page</title>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '527099360272560'); // Your actual Pixel ID
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=527099360272560&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background: #f4f4f4;
-      padding: 20px;
+      padding: 50px;
+      background-color: #f4f4f4;
     }
-    .card {
-      background: white;
-      padding: 20px;
-      margin: auto;
-      max-width: 400px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #ccc;
+    h1 {
+      color: #333;
     }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
+    p {
+      font-size: 18px;
     }
-    .details {
-      margin-top: 20px;
-      text-align: left;
+    .donate-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h2>Donate to Shakila Khatoon</h2>
-    <img src="GooglePay_QR.png" alt="QR Code" />
-    <div class="details">
-      <p><strong>Account Holder:</strong> Shakila Khatoon</p>
-      <p><strong>Account No:</strong> 358102120006559</p>
-      <p><strong>IFSC Code:</strong> UBIN0535818</p>
-      <p><strong>UPI ID:</strong> shakilakhatoon4542@okicici</p>
-    </div>
-    <p>Scan the QR code above or use UPI ID to donate directly.</p>
-  </div>
+  <h1>Support Our Cause</h1>
+  <p>Your donation helps us continue our work.</p>
+  <a href="https://wa.me/919839943961" class="donate-button">Donate via WhatsApp</a>
 </body>
 </html>
